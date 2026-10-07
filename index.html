@@ -55,17 +55,14 @@
     }
 
     .brand-mark {
-      display: grid;
+      display: block;
+      flex: 0 0 auto;
       width: 92px;
+      height: 92px;
       aspect-ratio: 1;
-      place-items: center;
-      border-radius: 50%;
-      background: var(--coral);
-      color: var(--navy);
-      font-family: Georgia, serif;
-      font-size: 4rem;
-      font-weight: 700;
-      letter-spacing: 0;
+      border-radius: 8px;
+      background: white;
+      object-fit: cover;
     }
 
     .lesson-label {
@@ -449,7 +446,7 @@
     @media (max-width: 640px) {
       .topbar { min-height: 104px; padding: 16px 20px; }
       .brand { gap: 12px; letter-spacing: .16em; }
-      .brand-mark { width: 58px; font-size: 2.6rem; }
+      .brand-mark { width: 58px; height: 58px; }
       .lesson-label { font-size: .7rem; letter-spacing: .08em; }
       .lesson-label span { padding: 0 4px; }
       main { width: min(100% - 24px, 1120px); margin-top: 32px; }
@@ -472,7 +469,7 @@
 <body>
   <header class="topbar">
     <div class="brand">
-      <span class="brand-mark" aria-hidden="true">B</span>
+      <img class="brand-mark" src="ecv-edu-center-logo.png" alt="Logo ECV Edu Center">
       <span>BASIC ENGLISH</span>
     </div>
     <div class="lesson-label">Lesson 13 <span>/</span> Requests</div>
